@@ -45,5 +45,16 @@ int main()
 	cout << vec5 + vec6 << endl;
 	cout << vec5 - vec6 << endl;
 	
+	cout << vec5 * vec6 << endl;
+	cout << (vec5^vec6) << endl;
+	
+	cout << +vec5 << endl;
+	cout << -vec6 << endl;
+	
+	cout << vec5 * 5 << endl;
+	cout << 5 * vec5 << endl;
+	cout << vec5 / 2 << endl;
+	
+	
 	return 0;
 }

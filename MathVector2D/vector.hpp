@@ -23,17 +23,17 @@ public:
 	vector & operator+=(vector const & other);//done, tested
 	vector & operator-=(vector const & other);//done, tested
 	
-	vector operator+(vector const & other) const;
-	vector operator-(vector const & other) const;
-	double operator*(vector const & other) const;
-	double operator^(vector const & other) const;
+	vector operator+(vector const & other) const;//done, tested
+	vector operator-(vector const & other) const;//done, tested
+	double operator*(vector const & other) const;//done, tested
+	double operator^(vector const & other) const;//done, tested
 	
-	vector operator-() const;
-	vector operator+() const; 
+	vector operator-() const;//done, tested
+	vector operator+() const;//done, tested
 	
-	vector operator*(double num) const;
-	friend vector operator*(double num, vector const & vect);
-	vector operator/(double num) const;
+	vector operator*(double num) const;//done, tested
+	friend vector operator*(double num, vector const & vect);//done, tested
+	vector operator/(double num) const;//done, tested
 	
 	friend std::istream & operator >> (std::istream & is, vector & vect);//done, tested
 	friend std::ostream & operator << (std::ostream & os, vector const & vect);//done, tested

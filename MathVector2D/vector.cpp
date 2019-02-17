@@ -72,6 +72,40 @@ vector vector::operator-(vector const & other) const
 	return vector(x - other.x, y - other.y);
 }
 
+double vector::operator*(vector const & other) const
+{
+	return sqrt(x*other.x + y*other.y);
+}
+
+double vector::operator^(vector const & other) const
+{
+	return x*other.y - y*other.x;
+}
+
+vector vector::operator+() const
+{
+	return *this;
+}
+
+vector vector::operator-() const
+{
+	return vector(-x, -y);
+}
+
+vector vector::operator*(double num) const
+{
+	return vector(x*num, y*num);
+}
+
+vector vector::operator/(double num) const
+{
+	return vector(x/num, y/num);
+}
+
+vector operator*(double num, vector const & vect)
+{
+	return vector(vect.x*num, vect.y*num);
+}
 
 ///Destructor:
 vector::~vector() {}
