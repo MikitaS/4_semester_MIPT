@@ -34,6 +34,16 @@ int main()
 	cout << vec1.perpendicular() << endl;
 	cout << vec1.norm() << endl;
 	
+	vec1 = vec2;
+	cout << vec1 << endl;
+	
+	vec1 += vec3;
+	vec2 -= vec3;
+	cout << vec1 << " " << vec2 << endl;
+	
+	vector vec5(1, 2), vec6(3, 4);
+	cout << vec5 + vec6 << endl;
+	cout << vec5 - vec6 << endl;
 	
 	return 0;
 }

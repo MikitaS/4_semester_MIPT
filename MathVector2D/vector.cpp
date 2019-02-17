@@ -26,7 +26,7 @@ vector::vector(vector const & other)
 	this->y = other.y;
 }
 
-///Methods:
+///Non-inline methods:
 vector & vector::invert()
 {
 	double swaper = this->x;
@@ -39,6 +39,39 @@ vector vector::norm() const
 	double len = this->length();
 	return vector(x/len, y/len);
 }
+
+///Operators:
+vector & vector::operator=(vector const & other)
+{
+	this->x = other.x;
+	this->y = other.y;
+	return *this;
+}
+
+vector & vector::operator+=(vector const & other)
+{
+	this->x +=other.x;
+	this->y +=other.y;
+	return *this;
+}
+
+vector & vector::operator-=(vector const & other)
+{
+	this->x -=other.x;
+	this->y -=other.y;
+	return *this;
+}
+
+vector vector::operator+(vector const & other) const
+{
+	return vector(x + other.x, y + other.y);
+}
+
+vector vector::operator-(vector const & other) const
+{
+	return vector(x - other.x, y - other.y);
+}
+
 
 ///Destructor:
 vector::~vector() {}

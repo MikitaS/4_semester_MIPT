@@ -18,15 +18,15 @@ public:
 	vector norm() const; //done, tested
 	inline vector perpendicular() const { return vector(y, -x);} // done, tested
 	
-///operators:
-	vector & operator=(vector const & other);
-	vector & operator+=(vector const & other);
-	vector & operator-=(vector const & other);
+///Operators:
+	vector & operator=(vector const & other);//done, tested
+	vector & operator+=(vector const & other);//done, tested
+	vector & operator-=(vector const & other);//done, tested
 	
 	vector operator+(vector const & other) const;
 	vector operator-(vector const & other) const;
-	vector operator*(vector const & other) const;
-	vector operator^(vector const & other) const;
+	double operator*(vector const & other) const;
+	double operator^(vector const & other) const;
 	
 	vector operator-() const;
 	vector operator+() const; 
