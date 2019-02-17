@@ -25,6 +25,15 @@ int main()
 	cout << vec4.length() << endl;
 	cout << vec4.sqlength() << endl;
 	
+	cout << vec4.invert() << endl;
+	
+	vec1.X() = 2;
+	vec1.Y() = 10;
+	cout << vec1 << endl;
+	
+	cout << vec1.perpendicular() << endl;
+	cout << vec1.norm() << endl;
+	
 	
 	return 0;
 }

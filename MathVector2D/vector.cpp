@@ -27,6 +27,18 @@ vector::vector(vector const & other)
 }
 
 ///Methods:
+vector & vector::invert()
+{
+	double swaper = this->x;
+	this->x = this->y;
+	this->y = swaper; 
+}
+
+vector vector::norm() const
+{
+	double len = this->length();
+	return vector(x/len, y/len);
+}
 
 ///Destructor:
 vector::~vector() {}

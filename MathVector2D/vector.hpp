@@ -11,12 +11,12 @@ public:
 	
 ///methods:
 	inline double length() const { return sqrt(x*x + y*y);} //done, tested
-	inline double sqlength() const {return x*x + y*y;} //done, tested
-	void invert();
-	double & X();
-	double & Y();
-	vector norm();
-	vector perpendicular();
+	inline double sqlength() const { return x*x + y*y;} //done, tested
+	vector & invert();//done, tested
+	inline double & X() { return this->x;} //done, tested
+	inline double & Y() { return this->y;} //done, tested
+	vector norm() const; //done, tested
+	inline vector perpendicular() const { return vector(y, -x);} // done, tested
 	
 ///operators:
 	vector & operator=(vector const & other);
