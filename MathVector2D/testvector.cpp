@@ -21,5 +21,10 @@ int main()
 	vector vec3 = vec2;
 	cout << vec3 << endl;
 	
+	vector vec4(3,4);
+	cout << vec4.length() << endl;
+	cout << vec4.sqlength() << endl;
+	
+	
 	return 0;
 }

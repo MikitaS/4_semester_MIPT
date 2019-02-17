@@ -26,7 +26,7 @@ vector::vector(vector const & other)
 	this->y = other.y;
 }
 
-///
+///Methods:
 
 ///Destructor:
 vector::~vector() {}

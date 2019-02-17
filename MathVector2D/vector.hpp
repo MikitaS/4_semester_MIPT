@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 
 class vector
 {
@@ -9,8 +10,8 @@ public:
 	vector(const vector & other);//done, tested
 	
 ///methods:
-	inline double length() const;
-	inline double sqlength() const;
+	inline double length() const { return sqrt(x*x + y*y);} //done, tested
+	inline double sqlength() const {return x*x + y*y;} //done, tested
 	void invert();
 	double & X();
 	double & Y();
