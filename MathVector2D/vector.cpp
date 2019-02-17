@@ -20,5 +20,13 @@ vector::vector() : x(0), y(0) {}
 
 vector::vector(double amx, double amy) : x(amx), y(amy)	{}
 
+vector::vector(vector const & other)
+{
+	this->x = other.x;
+	this->y = other.y;
+}
+
+///
+
 ///Destructor:
 vector::~vector() {}

@@ -4,9 +4,9 @@ class vector
 {
 public:
 ///constructors:
-	vector();//done
-	vector(double amx, double amy);//done
-	vector(const vector & other);
+	vector();//done, tested
+	vector(double amx, double amy);//done, tested
+	vector(const vector & other);//done, tested
 	
 ///methods:
 	inline double length() const;
@@ -34,11 +34,11 @@ public:
 	friend vector operator*(double num, vector const & vect);
 	vector operator/(double num) const;
 	
-	friend std::istream & operator >> (std::istream & is, vector & vect);//done
-	friend std::ostream & operator << (std::ostream & os, vector const & vect);//done
+	friend std::istream & operator >> (std::istream & is, vector & vect);//done, tested
+	friend std::ostream & operator << (std::ostream & os, vector const & vect);//done, tested
 	
 ///destructor:
-	~vector();//done
+	~vector();//done, tested
 private:
 	double x;
 	double y;	
